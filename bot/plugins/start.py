@@ -8,20 +8,18 @@ from ..screenshotbot import ScreenShotBot
 @ScreenShotBot.on_message(filters.private & filters.command("start"))
 async def start(c, m, cb=False):
     owner_id = Config.AUTH_USERS[0]
-    username = 'Mrk_YT'
-    mention = '[Mo Tech YT](https://t.me/Mo_Tech_YT)'
+    username = 'kingbotstore'
+    mention = '[Mo Tech YT](https://t.me/kingbotstore)'
     try:
         owner = await c.get_users(owner_id)
-        username = owner.username if owner.username else 'Ns_AnoNymous'
+        username = owner.username if owner.username else 'kingbotstore'
         mention = owner.mention(style="md")
     except Exception as e:
         print(e)
 
     BUTTONS = [[
         InlineKeyboardButton("My Father 🧔", url=f"https://t.me/{username}"),
-        InlineKeyboardButton("Updates Channel 🔰", url="https://t.me/Mo_Tech_YT")
-        ],[
-        InlineKeyboardButton("🖥️ How To Own 🖥️", url="https://youtu.be/lGlczIZ4HTI")
+        InlineKeyboardButton("Updates Channel 🔰", url="https://t.me/kingbotstore")
         ],[
         InlineKeyboardButton("Help ⁉️", callback_data="help"),
         InlineKeyboardButton("Settings ⚙", callback_data="set+settings")
@@ -29,8 +27,8 @@ async def start(c, m, cb=False):
         InlineKeyboardButton("Close 📛", callback_data="close")
     ]]
 
-    TEXT = f"👋 Hi {m.from_user.mention},\n\nI'm Screenshot Generator Bot. I can provide screenshots, sample video from "
-    TEXT += "your video files and also can trim. For more details check help.\n\n"
+    TEXT = f"👋 Hi {m.from_user.mention},\n\nNjan Screenshot Generator Bot.Vilachil eduthaal ninakk ban eduth annaakkil therum "
+    TEXT += "help koduthaal njan aaraanu endhanu ennokke ariyaam.\n\n"
     TEXT += f"**Maintained By:** {mention}"
 
     if cb:
