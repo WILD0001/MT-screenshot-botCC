@@ -95,7 +95,7 @@ class TrimVideoProcess(BaseProcess):
                 )
 
             log.info(
-                "Trimming video (duration %ss from %s) from location: %s for %s",
+                "Trimming video...Ippo theraam (duration %ss from %s) from location: %s for %s",
                 request_duration,
                 start,
                 self.file_link,
