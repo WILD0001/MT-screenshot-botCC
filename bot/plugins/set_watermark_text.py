@@ -12,7 +12,7 @@ async def _(c, m):
 
     if len(m.command) == 1:
         await m.reply_text(
-            text="You can add custom watermark text to the screenshots.\n\nUsage: `/set_watermark text`. "
+            text="Ninakk show kaanikkan vendi ith upayogicho.\n\nUsage: `/set_watermark text`. "
             "Text should not Exceed 30 characters.",
             quote=True,
             parse_mode="markdown",
@@ -23,7 +23,7 @@ async def _(c, m):
     if len(watermark_text) > 30:
         await m.reply_text(
             text=f"The watermark text you provided (__{watermark_text}__) is `{len(watermark_text)}` "
-            "characters long! You cannot set watermark text greater than 30 characters.",
+            "Nee endhada kandhayano ezhuthi tharunne m%$#! You cannot set watermark text greater than 30 characters.",
             quote=True,
             parse_mode="markdown",
         )
