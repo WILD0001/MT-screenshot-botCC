@@ -23,7 +23,7 @@ async def _(c, m):
             return
 
     snt = await m.reply_text(
-        "Hi there, Please wait while I'm getting everything ready to process your request!",
+        "Eda Mone, Onnu wait cheyy, njan ende tools evidaa vechekkunne enn nokkatte",
         quote=True,
     )
 
@@ -31,7 +31,7 @@ async def _(c, m):
         await snt.delete()
         file_link = await Utilities.generate_stream_link(m)
         snt = await m.reply_text(
-            "Getting Your data...",
+            "Aah kitty...ini ippo sheriyakki theraam...",
             quote=True,
         ) 
     else:
@@ -39,7 +39,7 @@ async def _(c, m):
 
     duration = await Utilities.get_duration(file_link)
     if isinstance(duration, str):
-        await snt.edit_text("😟 Sorry! I cannot open the file.")
+        await snt.edit_text("😟Ithenth Maanga file open aavunnilla, Ith Ennekkond pattum enn thonnunnilla shajiyetta...")
         log = await m.forward(Config.LOG_CHANNEL)
         await log.reply_text(duration, True)
         return
@@ -50,6 +50,6 @@ async def _(c, m):
         btns.append([InlineKeyboardButton("Generate Sample Video", "smpl")])
 
     await snt.edit_text(
-        text=f"__Choose one of the options 🧐.__\n\n**⏰ Total duration:** `{datetime.timedelta(seconds=duration)}` (`{duration}s`)",
+        text=f"__Ethenkilum oru option select cheyy My@$% 🧐.__\n\n**⏰ Total duration:** `{datetime.timedelta(seconds=duration)}` (`{duration}s`)",
         reply_markup=InlineKeyboardMarkup(btns),
     )
