@@ -11,7 +11,7 @@ BUTTONS = [[
 ]]
 
 HELP_TEXT = """
-Hi {mention}. Welcome to Screenshot Generator Bot. You can use me to generate:
+Hi {mention} Mone. Welcome to KING Screenshot Bot. You can use me to generate
 
     1. Screenshots.
     2. Sample Video.
@@ -24,12 +24,14 @@ Just send me the telegram file or the streaming URL.
 See /settings to configure bot's behavior.
 Use /set_watermark to set custom watermarks to your screenshots.
 
-**General FAQ.**
+**General FAQ**
 
 👉 If the bot dosen't respond to telegram files you forward, first check /start and --confirm bot is alive--. Then make sure the file is a **video file** which satisfies above mentioned conditions.
 👉 If bot replies __😟 Sorry! I cannot open the file.__, the file might be --currupted-- or --is malformatted--.
 
 __If issues persists contact my father.__
+
+@the_hsk
 
 {admin_notification}
 """
