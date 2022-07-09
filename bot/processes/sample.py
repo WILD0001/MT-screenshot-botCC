@@ -64,7 +64,7 @@ class SampleVideoProcess(BaseProcess):
                 start_at = Utilities.get_random_start_at(reduced_sec, sample_duration)
                 subtitle_option = await Utilities.fix_subtitle_codec(self.file_link)
                 log.info(
-                    "Generating sample video (duration %ss from %s) from location: %s for %s",
+                    "Sample video Undakkuvaaada mone... (duration %ss from %s) from location: %s for %s",
                     sample_duration,
                     start_at,
                     self.file_link,
